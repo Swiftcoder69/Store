@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us</title>
+  <style>
+    /* General Reset */
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background-color: #f4f4f9;
+      color: #333;
+    }
+
+    /* Header Section */
+    h1 {
+      text-align: center;
+      font-size: 2.5rem;
+      color: #4a4a8c;
+      margin: 20px 0;
+    }
+
+    p {
+      text-align: center;
+      font-size: 1.2rem;
+      margin: 10px 0 30px;
+      color: #555;
+    }
+
+    /* Contact Section */
+    div {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      padding: 20px;
+    }
+
+    /* Button Style */
+    a {
+      display: inline-block;
+      padding: 15px 25px;
+      background-color: #4a4a8c;
+      color: white;
+      text-decoration: none;
+      font-size: 1.2rem;
+      border-radius: 8px;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+
+    a:hover {
+      background-color: #3b3b7c;
+      transform: scale(1.05);
+    }
+
+    a:active {
+      transform: scale(1);
+    }
+
+    /* Responsive Design */
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 2rem;
+      }
+
+      p {
+        font-size: 1rem;
+      }
+
+      a {
+        padding: 12px 20px;
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div>
+    <h1>Contact Us</h1>
+    <p>Here is my number and email to contact me:</p>
+    <a href="mj2096624@gmail.com" target="_blank" onclick="openMail(event)">Send Email</a>
+  </div>
+
+  <script>
+    function openMail(event) {
+      event.preventDefault(); // Prevent default behavior
+      window.open('mailto:mj2096624@gmail', '_blank'); // Open in new tab
+    }
+  </script>
+</body>
+
+</html>
